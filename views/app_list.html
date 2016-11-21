@@ -1,0 +1,107 @@
+{% extends "apps.html" %}
+
+{% block pagetitle %}
+    {% if info.query %}
+        {% set title = "جستجو برای " + info.query %}
+    {% elseif info.cat == "اپفورال" or not info.cat %}
+        {% set title = "لیست برنامه‌ها" %}
+    {% else %}
+        {% set title = info.cat %}
+    {% endif %}
+    <title>اپفورال | {{title}}</title>
+{% endblock %}
+
+{% block searchquery %}
+{{ info.query }}
+{% endblock %}
+
+{% block appsblock %}
+
+<section class="apps-box">
+    {% include "sidebar.html" %}
+    <section class="apps-list">
+        <div class="apps-title fa">
+            {% if info.query %}
+                {% set title = "جستجو برای " + info.query %}
+            {% elseif info.cat == "اپفورال" or not info.cat %}
+                {% set title = "لیست برنامه‌ها" %}
+            {% else %}
+                {% set title = info.cat %}
+            {% endif %}
+            نتایج {{title}}
+        </div>
+        <div class="apps-top-menu fa">
+            {% if info.nextPageUrl and !info.query %}
+            <a href="{{info.nextPageUrl}}" class="next-apps"><span></span>برنامه‌های بعدی</a>
+            {% endif %}
+            {% if info.query and info.total != "0" %}
+            <div class="apps-counter">{{info.total}} نتیجه اول برای عبارت {{ info.query }}</div>
+            {% else %}
+            <div class="apps-counter">هم اکنون {{info.total}} برنامه در {{title}} موجود است</div>
+            {% endif %}
+            {% if info.pervPageUrl and !info.query %}
+            <a href="{{info.pervPageUrl}}" class="prew-apps">برنامه‌های قبلی<span></span></a>
+            {% endif %}
+        </div><!--apps-top-menu-->
+        {% if !apps.length %}
+        <div class="search-error">
+            <div class="logo"></div>
+            <p class="text">
+                اگر به دنبال برنامه خاصی میگردید لطفا مشخصات برنامه را به ما اعلام کنید تا خیلی زود تهیه‌اش کنیم :)
+            </p>
+            <div class="form">
+                <form action="/vitrine/suggest" method="get">
+                    <input class="input only_loggedout" placeholder="ایمیل شما" type="email">
+                    <input class="input" placeholder="نام برنامه یا کلمه کلیدی و ..." type="text" name="app_name">
+                    <div class="checkbox">
+                        <input class="only_loggedout" id="chk" type="checkbox" checked="">
+                        <label class="only_loggedout" for="chk">مرا در خبرنامه اپفورال عضو کن.</label>
+                    </div>
+                    <input class="ibtn submit" value="اعلام برنامه به اپفورال" type="submit">
+                </form>
+            </div>
+            <div class="success" style="display: none">درخواست شما با موفقیت به ثبت رسید.</div>
+        </div>
+        {% else %}
+        {% for app in apps %}
+        <section class="{{'the-apps' | addFarsiClass(app.nam)}}">
+            <a href="/vitrine/{{app.id}}">
+                <figure>
+                    <img src="{{app.a160}}", alt="{{app.nam}}">
+                    <figcaption class="app-name">{{app.nam | slice(0, 25)}}</figcaption>
+                    <span>{{app.cat | translateCat}}</span>
+                </figure>
+            </a>
+        </section><!--the-apps-->
+        {% endfor %}
+        {% if info.query %}
+        <div class="search-error">
+            <p class="text"> در صورتی که برنامه مورد نظر شما در لیست نتایج جستجو نیست مشخصات برنامه را به ما اعلام کنید تا خیلی زود تهیه‌اش کنیم :)</p>          
+            <div class="form">  
+                <form action="/" method="get">
+                    <input class="input only_loggedout" placeholder="ایمیل شما" type="email">
+                    <input class="input" placeholder="نام برنامه یا کلمه کلیدی و ..." type="text" name="app_name">
+                    <div class="checkbox">
+                        <input class="only_loggedout" id="newsletter-offer" type="checkbox" checked="">
+                        <label class="only_loggedout" for="chk">مرا در خبرنامه اپفورال عضو کن.</label>
+                    </div>
+                    <input class="ibtn submit" value="اعلام برنامه به اپفورال" type="submit">
+                </form>
+            </div>
+            <div class="success" style="display: none">درخواست شما با موفقیت به ثبت رسید.</div>
+        </div>
+        {% endif %}
+        {% endif %}
+
+        <div class="the-loader" id="loader"><span></span></div>
+    </section><!--apps-list-->
+</section><!--apps-box-->
+{% endblock %}
+
+{% block scripts %}
+{% if bundle %}
+<script>
+ openInPROJECT("PROJECT://apps/collection/{{bundle}}");
+</script>
+{% endif %}
+{% endblock %}

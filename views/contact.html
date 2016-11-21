@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link href="/assets/css/single.min.css" media="all" rel="stylesheet" >
+{% endblock %}
+
+{% block download %}{% endblock %}
+
+{% block main %}
+<main>
+	<section class="contact-page fa">
+		<section class="container">
+			<section class="single-page-body">
+				<div class="contact-top">
+					<div class="the-bg"></div>
+					<h2 class="contact-title">سوالی درباره اپفورال دارید؟ تیم پشتیبانی اپفورال هفت روز هفته در کنار شماست.</h2>
+				</div>
+				<div class="row contact-box">
+					<div class="box-title">تماس با پشتیبانی اپفورال<span></span></div>
+					<div class="col-1-3">
+						<div class="info-box chat">
+							<div class="the-title">
+								<span class="the-icon"></span>
+								گفتگوی آنلاین:
+							</div>
+							<div class="the-spec"><span class="arrow_box">شروع گفتگوی آنلاین</span><div onclick="lz_chat_change_state(true,false)">گفتگوی آنلاین با تیم پشتیبانی اپفورال</div></div>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="info-box mail">
+							<div class="the-title">
+								<span class="the-icon"></span>
+								ایمیل:
+							</div>
+							<div class="the-spec"><a href="mailto:hi@PROJECT.ir">hi@PROJECT.ir</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="row social-box">
+					<div class="box-title">اپفورال در شبکه های اجتماعی<span></span></div>
+					<ul>
+						<li><a target="_blank" href="http://www.facebook.com/PROJECTHQ" class="social-icon facebook"></a><span>فیسبوک</span></li>
+						<li><a target="_blank" href="http://twitter.com/PROJECTHQ" class="social-icon twitter"></a><span>توئیتر</span></li>
+						<li><a target="_blank" href="http://instagram.com/PROJECTHQ" class="social-icon instagram"></a><span>اینستاگرام</span></li>
+						<li><a target="_blank" href="https://telegram.me/PROJECTHQ" class="social-icon telegram"></a><span>تلگرام</span></li>
+					</ul>
+				</div>
+
+			</section><!--single-page-body-->
+		</section>
+	</section><!--contact-page-->
+</main>
+{% endblock %}

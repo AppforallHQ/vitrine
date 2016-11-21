@@ -1,0 +1,24 @@
+#!/bin/bash
+echo "Uglifying js files..."
+JS_LIST="public/js/analytics.js "\
+"public/js/jquery-1.9.1.min.js "\
+"public/js/jquery.selectbox.js "\
+"public/js/jquery.slides.js "\
+"public/js/jquery.pjax.js "\
+"public/js/spin.js "\
+"public/js/jquery.spin.js "\
+"public/js/hogan-2.0.0.js "\
+"public/js/jquery.spin.js "\
+"public/js/vitrine.js "\
+"public/js/vitrine_app.js "\
+"public/js/chat_widget.js "\
+"public/js/script.js "\
+"public/js/wow.min.js "
+
+JS_EARLY_PAGES="$JS_LIST"\
+"public/js/earlypage.js "
+
+JS_REGISTER="$JS_LIST"\
+"public/js/register.js "
+
+uglifyjs $JS_LIST -o public/js/all.js

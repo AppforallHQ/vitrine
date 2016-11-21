@@ -1,0 +1,122 @@
+﻿{% extends "base.html" %}
+
+{% block style %}
+<!-- <link href="/static/css/index.css" media="all" rel="stylesheet" > -->
+<link href="/assets/css/index.min.css" media="all" rel="stylesheet" >
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block main %}
+<main>
+	<section class="section-intro">
+		<section class="container">
+			<div class="intro-content fa">
+				<h1 class="org-title"><span>دانلود نامحدود برنامه‌های</span> آیفون و آیپد</h1>
+				<div class="context">
+					<h2><span>دانلود نامحدود</span> بیش از {{info.total}} برنامه آیفون و آیپد</h2>
+					<div>و</div>
+					<h2><span>خرید ریالی تمامی برنامه‌های</span> اپ‌استور آمریکا</h2>
+				</div>
+				<p>
+					<a href="#download" class="download-scroll-button">
+						<span>رایگان نصب کنید</span><i></i>
+					</a>
+				</p>
+			</div><!--intro-content-->
+		</section>
+		<aside class="scrool-down-line">
+			<a href="#about" class="button-border">
+				<div class="go-down"><i></i></div>
+				<span></span>
+			</a>
+		</aside><!--scrool-down-line-->
+	</section><!--section-intro-->
+
+	<section class="section-what fa" id="about">
+		<section class="container">
+			<div class="section-title">چرا اپفورال ده‌ها هزار کاربر راضی و خوشحال دارد؟<span></span></div>
+			<div class="row">
+				<div class="col-1-4 left-col floatleft">
+					<article class="PROJECT-desc">
+						<ul>
+							<li><i></i>دانلود نامحدود {{info.total}} برنامه پرطرفدار آیفون و آیپد</li>
+							<li><i></i>خرید ریالی و قانونی تمام برنامه های اپ استور آمریکا</li>
+							<li><i></i>سرعت دانلود بالا از سرورهای داخل ایران</li>
+							<li><i></i>سازگاری با تمام آیفون و آیپدهای دارای iOS 8 و 9</li>
+							<li><i></i>بدون نیاز به جیلبریک</li>
+							<li><i></i>نقد و بررسی برترین برنامه‌ها هر هفته در ایمیل شما</li>
+						</ul>
+					</article><!--PROJECT-desc-->
+				</div>
+				<div class="col-1-4 iphone-col floatleft">
+					<figure class="iphone-hand">
+						<img class="theiphone" src="static/images/PROJECT-what-iphone.png">
+						<img class="thegif" src="static/images/PROJECT-gif.gif">
+					</figure>
+				</div>
+				<div class="col-1-4 right-col floatleft">
+					<article class="PROJECT-desc">
+						<p>اپفورال برای شما طراحی شده است تا حالا که هزینه نسبتا زیادی بابت سخت‌افزار پرداخت کرده‌اید از تمام برنامه‌های آیفون و آیپد هم لذت ببرید! در همین زمان که شما این متن را می‌خوانید،‌ ده‌ها هزار کاربر اپفورال در ایران:</p>
+						<p>- بدون نیاز به اپل آیدی، بصورت کاملا رایگان {{info.total}} برنامه برتر iOS را نامحدود از اپفورال دانلود می‌کنند.</p>
+						<p>- اگر مایل به خرید برنامه خاصی از Appstore آمریکا بودند بدون نیاز به کردیت کارت آمریکایی و صرفا با پرداخت معادل ریالی خریدشان را در کمتر از یک دقیقه از خود اپل (به واسطه اپفورال) انجام می‌دهند!</p>
+						<ul class="right-ul">
+							<li><i></i>دانلود نامحدود {{info.total}} برنامه پرطرفدار آیفون و آیپد</li>
+							<li><i></i>خرید ریالی و قانونی تمام برنامه های اپ استور آمریکا</li>
+							<li><i></i>سرعت دانلود بالا از سرورهای داخل ایران</li>
+							<li><i></i>سازگاری با تمام آیفون و آیپدهای دارای iOS 8 و 9</li>
+							<li><i></i>بدون نیاز به جیلبریک</li>
+							<li><i></i>نقد و بررسی برترین برنامه‌ها هر هفته در ایمیل شما</li>
+						</ul>
+					</article><!--PROJECT-desc-->
+				</div>
+			</div>
+		</section>
+		<div class="bottom-line"></div>
+	</section><!--section-what-->
+
+  {% include "pricetable.html" %}
+
+	<section class="section-appscol fa">
+		<section class="container">
+			<div class="section-title">برنامه‌های موجود در اپفورال<span></span></div>
+			<section class="search-box">
+				<h1 class="search-title">همه برنامه های آیفون و آیپد اپ‌استور اپل از طریق اپفورال قابل دانلود است. به دنبال برنامه خاصی می گردید؟</h1>
+				<div class="search-block">
+					<form class="search-form" method="get" action="/vitrine/">
+						<input name="q" type="text" placeholder="جستجو نام برنامه یا کلمات کلیدی و ...." class="input search-input">
+						<input type="submit" class="search-submit" value="">
+					</form>
+				</div>
+			</section><!--search-box-->
+      {% include "bundels.html" %}
+    </section>
+  </section><!--section-appscol-->
+
+{% include "support.html" %}
+	<div class="enamad"><img id='drftgwmdnbpelbrhsgui' style='cursor:pointer' onclick='window.open("http://trustseal.enamad.ir/Verify.aspx?id=19270&p=nbpdjzpgwkynqgwldrfs", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")' alt='' src='static/images/eNamad.png'/></div>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+ //for Counter apps download
+ $(document).ready(function(){
+     $('#dirdl').on("click", function(e) {
+         analytics.track("userfree_download", {
+             category: 'Download App',
+             label: 'index'
+         });
+     });
+
+     $(".sms-form button.submit").on('click', function(){
+         analytics.track('sms_download', {
+             category: 'Download App',
+             label: 'index',
+             value: 1
+         });
+     });
+ });
+</script>
+{% endblock %}

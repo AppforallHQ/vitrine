@@ -1,0 +1,25 @@
+{% extends "apps.html" %}
+{% block appsblock %}
+
+<section class="apps-box">
+    {% include "sidebar.html" %}
+    <section class="bundles-list fa">
+        <h1 class="bundles-title">معرفی مجموعه‌ای از برنامه های پرطرفدار برای آیفون و آیپد شما</h1>
+        {% for bundle in bundles %}
+        <section class="col-1-4">
+            <figure class="the-bundle">
+                <!--                 <a href="{{ bundle.link }}"> -->
+                <a href="/bundle/{{bundle.slug}}">
+                    <div>
+                        <img src="{{ bundle.image['site'] }}">
+                        <figcaption class="bundle-title">{{ bundle.title }}</figcaption>
+                    </div>
+                </a>
+            </figure>
+        </section><!--col-1-4-->
+        {% endfor %}
+
+        <div class="the-loader" id="loader"><span></span></div>
+    </section><!--apps-list-->
+</section><!--apps-box-->
+{% endblock %}

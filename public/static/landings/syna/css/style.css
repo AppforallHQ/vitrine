@@ -1,0 +1,239 @@
+.page-top-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.page-top-menu .head-logo-link {
+    background-image: url('../images/PROJECT-logo-w.svg');
+    opacity: 0.8;
+}
+.page-top-menu .menu-nav ul li a {
+    color: #fff;
+    opacity: 0.8;
+}
+.page-top-menu .menu-nav ul li a:hover {
+    opacity: 1;
+}
+.page-footer {
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    background: rgba(0, 0, 0, 0.1);
+}
+body {
+    background: url('../images/bg.jpg');
+}
+.light-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg-light.png') no-repeat center;
+}
+.syna-body {
+    position: relative;
+    padding-top: 1px;
+    max-width: 640px;
+    height: auto;
+    margin: 0 auto;
+    direction: rtl;
+    text-align: center;
+}
+.syna-body .syna-header {
+    margin: 100px auto 0 auto;
+    padding-top: 76.5625%;
+    background: url('../images/header-image.png') no-repeat center;
+    background-size: 100%;
+}
+.syna-body .box-body {
+    position: relative;
+    min-height: 700px;
+
+}
+.syna-body .box-body .right-border,
+.syna-body .box-body .left-border {
+    background: url('../images/box-border.png') no-repeat;
+    background-position: right center;
+    width: 20px;
+    height: 580px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.syna-body .box-body .left-border {
+    background-position: left center;
+    right: auto;
+    left: 0;
+    top: 0;
+}
+.syna-body .box-body .thetitle{
+    font-weight: normal;
+    color: #d7b374;
+    font-size: 28px;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.syna-body .box-body .syna-icon {
+    display: block;
+    margin:30px auto 10px auto;
+    width: 152px;
+    height: 152px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius:    35px;
+    -ms-border-radius:     35px;
+    border-radius:         35px;
+    -webkit-box-shadow: 0 1px 2px 1px rgba(255, 255, 255, 0.12);
+    -moz-box-shadow:    0 1px 2px 1px rgba(255, 255, 255, 0.12);
+    box-shadow:         0 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.syna-body .box-body .syna-name {
+    background: url('../images/syna-name.png') no-repeat center;
+    margin:20px auto;
+    height: 30px;
+}
+.syna-body .box-body .syna-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fefefe;
+    padding: 0 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.syna-body .box-body .download-box {
+    margin: 40px 80px;
+    padding: 20px;
+    padding-bottom: 15px;
+    background: rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px 2px 1px rgba(255, 255, 255, 0.12);
+    -moz-box-shadow:    inset 0 1px 2px 1px rgba(255, 255, 255, 0.12);
+    box-shadow:         inset 0 1px 2px 1px rgba(255, 255, 255, 0.12);
+    -webkit-border-radius: 16px;
+    -moz-border-radius:    16px;
+    -ms-border-radius:     16px;
+    border-radius:         16px;
+    overflow: hidden;
+}
+.syna-body .box-body .download-box .download-link {
+    display: block;
+    background: #50bd50;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    -ms-border-radius:     6px;
+    border-radius:         6px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background: #50bd50;
+    background: -moz-linear-gradient(top, #3bdb3b 0%, #4aae4a 100%);
+    background: -webkit-linear-gradient(top, #3bdb3b 0%,#4aae4a 100%);
+    background: linear-gradient(to bottom, #3bdb3b 0%,#4aae4a 100%);
+    opacity: 1;
+    -webkit-transition: 200ms all;
+    -moz-transition:    200ms all;
+    transition:         200ms all;
+    overflow: hidden;
+}
+.syna-body .box-body .download-box .download-link:hover {
+    opacity: 0.8;
+}
+.syna-body .box-body .download-box .download-link span {
+    float:left;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-right:2px solid rgba(0, 0, 0, 0.07); 
+}
+.syna-body .box-body .download-box .download-link i {
+    width: 48px;
+    height: 48px;
+    background: url('../images/PROJECT-logo.png') no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.syna-body .box-body .download-box a.about-link {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.fold .syna-body .box-body .download-box a.about-link {
+    font-size: 13px;
+}
+.syna-body .box-body .download-box a.about-link:hover {
+    color: #3090e9
+}
+@media (max-width: 600px) {
+    .page-header .page-top-menu {
+        position: fixed;
+        background: rgba(255, 255, 255, 0.97);
+    }
+	.page-top-menu .menu-nav ul li a {
+        color: #888;
+	    opacity: 1;
+	}
+    .page-header.openmenu .page-top-menu .head-logo {
+        display: block;
+    }
+	.syna-body .box-body .thetitle{
+	    font-size: 24px;
+	}
+	.fold .syna-body .box-body .thetitle{
+	    font-size: 19px;
+	}
+	.syna-body .box-body .right-border,
+	.syna-body .box-body .left-border {
+		display: none;
+	}
+	.syna-body .box-body .syna-text {
+	    padding: 0 10px;
+	}
+	.syna-body .box-body .download-box {
+	    margin: 5px;
+        margin-top: 20px;
+	    padding: 10px;
+	    -webkit-border-radius: 6px;
+	    -moz-border-radius:    6px;
+	    -ms-border-radius:     6px;
+	    border-radius:         6px;
+	}
+	.syna-body .box-body .download-box .download-link {
+	    -webkit-border-radius: 2px;
+	    -moz-border-radius:    2px;
+	    -ms-border-radius:     2px;
+	    border-radius:         2px;
+	    height: 70px;
+	    font-size: 18px;
+	    line-height: 70px;
+	    text-align: right;
+	    padding-right: 20px;
+	}
+	.fold .syna-body .box-body .download-box .download-link {
+	    font-size: 16px;
+	}
+    .syna-body .box-body .download-box .download-link span {
+        width: 70px;
+        height: 70px;
+    }
+	.syna-body .box-body .download-box .download-link:hover {
+	    opacity: 0.8;
+	}
+	.syna-body .box-body .download-box .download-link i {
+	    width: 36px;
+	    height: 36px;
+	    background-size: 100%;
+	    top: 16px;
+	    left: 16px;
+	}
+    .syna-body .box-body .download-box a.about-link {
+        margin-bottom: 5px;
+    }
+    .page-footer {
+        position: relative;
+        border-top: 1px solid rgba(255, 255, 255, 0.1); 
+        background: rgba(0, 0, 0, 0.3);
+    }
+}

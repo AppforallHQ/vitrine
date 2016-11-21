@@ -1,0 +1,97 @@
+{% extends "apps.html" %}
+
+{% block pagetitle %}
+{% if app.nam %}
+    <title>اپفورال | {{app.nam}}</title>
+{% else %}
+    <title>اپفورال | دانلود نامحدود برنامه های آیفون و آیپد</title>
+{% endif %}
+{% endblock %}
+
+{% block appsblock %}
+<article class="{{'showtheapp' | addFarsiClass(app.nam)}}" itemscope="">
+    <div class="theapp-spec">
+        <div class="apps-title">
+            <h1 itemprop="name">{{app.nam}}</h1>
+        </div>
+        <figure class="app-icon">
+            <img id="app-a160" src="{{ app.a160 }}" itemprop="image">
+        </figure>
+        <div class="spec-text">
+            <div class="price" itemprop="offers">
+                <span>قیمت در اپ استور</span>
+                <span id="app-prc" class="app-price-temp" itemprop="price">{{app.prc}}</span>
+            </div>
+            <ul>
+                <li>Category:
+                    <a id="app-cat" href="/vitrine/cat/{{app.cat}}">
+                        <span itemprop="applicationCategory">{{app.cat}}</span>
+                    </a>
+                </li>
+                <li>Updated:
+                    <span id="app-rel" content="app.rel" itemprop="datePublished">{{app.human_date}}</span>
+                </li>
+                <li>Version:
+                    <span id="app-ver" itemprop="softwareVersion">{{app.ver}}</span>
+                </li>
+                <li>Size: <span id="app-siz">{{app.siz}}</span></li>
+                <li>Languages: English</li>
+                <li itemtype="http://schema.org/Person" itemscope="" itempr="author">Seller:
+                    <span id="app-ven" itemprop="name">{{app.ven}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="theapp-desc">
+        <div class="theapp-title">
+            <a href="/signup" class="ibtn downloadapp-link">
+                <span>دانلود این برنامه با اپفورال</span><i></i>
+            </a>
+            <h1 id="app-nam" itemprop="name">{{app.nam}}</h1>
+        </div>
+        {% if app.locdes %}
+        <div class="fa-text fa">
+            <div id="app-locdes" class="title">توضیحات:</div>
+                {% autoescape false %}
+                {{app.html_loc_des}}
+                {% endautoescape %}
+        </div>
+        {% endif %}
+        <div class="apppage-tab">
+            <div class="tab-menu">
+                <div class="tab show-shot active">تصاویر برنامه</div>
+                <div class="tab show-text">توضیحات انگلیسی</div>	
+            </div>
+            <div class="app-screenshot">
+                <ul id="app-scr">
+                    {% for img in app.scr %}
+                    <li><img itemprop="screenshot" src="{{img}}" alt="{{app.nam}}"></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div id="app-desc" class="app-english" style="display:none" itemprop="description">
+                {% autoescape false %}
+                {{app.html_description}}
+                {% endautoescape %}
+			</div>
+		</div>
+	</section><!--showtheapp-->
+</article><!--apps-box-->
+
+<div class="the-loader" id="loader"><span></span></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+openInPROJECT("PROJECT://apps/view/{{app.id}}");
+</script>
+
+{% if not app.nam %}
+{# so we don't have this app #}
+<script src="/static/js/getappdata.js"></script>
+<script>
+getAppinfo({{info.itunesid}});
+</script>
+{% endif %}
+
+{% endblock %}

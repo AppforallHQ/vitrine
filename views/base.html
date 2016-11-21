@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {% block pagetitle %}
+        <title>اپفورال | دانلود نامحدود برنامه های آیفون و آیپد</title>
+        {% endblock %}
+        {% block head %}{% endblock %}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="اپفورال">
+        <meta property="og:url" content="https://www.PROJECT.ir">
+        <meta property="og:title" content="اپفورال">
+        <meta name="twitter:url" content="https://www.PROJECT.ir">
+        <meta name="twitter:domain" content="https://www.PROJECT.ir">
+        <meta name="twitter:site" content="@PROJECThq">
+        <meta name="twitter:creator" content="@PROJECThq">
+        <meta name="twitter:title" content="اپفورال">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" href="static/images/favicon.png">
+        <link href="/assets/css/main.min.css" media="all" rel="stylesheet" >
+        <script src="//cdn.optimizely.com/js/3708470141.js"></script>
+        {% block style %}{% endblock %}
+        <script src="/panel/user.js"></script>
+        <meta name="google-site-verification" content="GOOGLE_SITE_VERIFICATION_CODE"/>
+        <!-- Start Visual Website Optimizer Asynchronous Code -->
+        <script type='text/javascript'>
+         var _vwo_code=(function(){
+             var account_id=210247,
+                 settings_tolerance=2000,
+                 library_tolerance=2500,
+                 use_existing_jquery=false,
+                 // DO NOT EDIT BELOW THIS LINE
+                 f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+        </script>
+        <!-- End Visual Website Optimizer Asynchronous Code -->
+    </head>
+    <body>
+      <div id='bizzbar'>
+        <p class='bizztext'>سرویس اپفورال از تاریخ ۱ آذر ۱۳۹۵ در دسترس عموم نخواهد بود.</p>
+        <close></close>
+      </div>
+    {% block download %}
+        {% include "directdownload.html" %}
+    {% endblock %}
+
+        <header class="page-header">
+            <section class="page-top-menu">
+                <section class="container">
+                    <div class="menu-toggle" id="menu_toggle"></div>
+                    {% block login %}
+                    <div class="user-menu">
+                        <div class="login-button only_loggedout" id="login_button" style="display:none">پنل کاربران<i></i></div>
+                        <a href="/panel/" class="userislogin only_loggedin" style="display:none">
+                            <img class="user-avatar" src="/static/images/avatar.png">
+                            <span>ورود به پنل</span>
+                        </a>
+                    </div>
+                    {% include "signin_box.html" %}
+                    {% endblock %}
+
+                    {% block menu %}
+                    <a href="/" class="head-logo"></a>
+                    <nav class="menu-nav fa" id="menu_nav">
+                        <ul>
+                            <li><a href="https://www.PROJECT.ir">خانه</a></li>
+                            <li><a href="/features">امکانات</a></li>
+                            <li><a href="/vitrine/">برنامه‌های موجود</a></li>
+                            <li><a href="http://id.PROJECT.ir">ساخت اپل ای‌دی رایگان</a></li>
+                            <li><a href="/contact">تماس با ما</a></li>
+                            <li><a href="/blog">وبلاگ</a></li>
+                        </ul>
+                    </nav>
+                    {% endblock %}
+                </section>
+            </section>
+            <div class="menu-darkbg" id="menu_darkbg"></div>
+        </header>
+
+
+        {% block main %}{% endblock %}
+
+        {% include "footer.html" %}
+
+        <!-- Livezilla widget -->
+        <div id="livezilla_tracking" style="display:none"></div>
+        <script type="text/javascript">
+         var script = document.createElement("script");script.async=true;script.type="text/javascript";
+         var src = "/panel/chat/";setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)",1);
+        </script>
+        <noscript>
+            <img src="/panel/chat/?noscript=1" width="0" height="0" style="visibility:hidden;" alt="">
+        </noscript>
+        <script src="/assets/js/script.min.js"></script>
+        <script type="text/javascript">
+        </script>
+        {% block scripts %}{% endblock %}
+
+    </body>

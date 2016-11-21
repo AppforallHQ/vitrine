@@ -1,0 +1,908 @@
+/*---------------------  signup-page style  ---------------------*/
+.signup-page {
+	overflow: hidden;
+	background: #f0f0f0;
+	direction: rtl;
+}
+.signup-page .topbgline {
+	height: 550px;
+	width: 100%;
+	background: #445061;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.signup-page .apps-download-counter {
+	margin-top: 80px;
+	height: 140px;
+}
+.signup-page .apps-download-counter .counter-title {
+	text-align: center;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	height: 30px;
+	margin-bottom: 30px;
+}
+.signup-page .apps-download-counter .downloadscounter {
+	text-align: center;
+	direction: ltr;
+}
+.signup-page .apps-download-counter .downloadscounter .flip {
+	display: inline-block;
+	float: none;
+}
+.signup-page .container {
+	margin-top: 70px;
+	position: relative;
+}
+.signup-page .page-title {
+	text-align: center;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: normal;
+	font-size: 30px;
+	color: #fff;
+	height: 100px;
+	margin: 50px 50px 10px 50px;
+	line-height: 100px;
+}
+.signup-page .signup-block {
+	overflow: hidden;
+	margin:0 15px 25px 15px;
+	background: #ffffff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius:    6px;
+	-ms-border-radius:     6px;
+	border-radius:         6px;
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.10);
+	-moz-box-shadow: 	0px 2px 2px rgba(0, 0, 0, 0.10);
+	box-shadow: 		0px 2px 2px rgba(0, 0, 0, 0.10);
+	position: relative;
+}
+.signup-page .signup-block .signup-title {
+	background: #3090e9;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+.signup-page .signup-block .signup-title .stage-title {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size: 20px;
+	height: 100px;
+	color: #6faee8;
+	line-height: 100px;
+ 	vertical-align: top;
+}
+.signup-page .signup-block .signup-title .stage-title.active {
+	color: #fff;
+}
+.signup-page .signup-block .signup-title .title-arrow {
+	display: inline-block;
+	width: 20px;
+	height: 100px;
+	background:url('../images/signup-arrow.svg') no-repeat center;
+ 	vertical-align: top;
+}
+.signup-sect1,
+.signup-sect2,
+.signup-sect3 {
+	display: none;
+}
+.signup-sect3 {
+	display: block;
+}
+.plan-stage {
+	max-width: 1000px;
+	padding: 0 15px;
+	margin: 0 auto 60px auto;
+	overflow: hidden;
+	position: relative;
+	clear: both;
+}
+.plan-stage .handtext1515 {
+	overflow: hidden;
+	margin: 40px 20px 0 20px;
+}
+.plan-stage .handtext1515 div {
+	margin-left: 560px;
+	width:355px;
+	float: left;
+}
+.plan-stage .handtext1515 span {
+	display: block;
+	padding-top: 48%;
+	background:url('../images/1515-handtitle.png') no-repeat center;
+	background-size: cover;
+}
+.plan-stage .planslist {
+	float: left;
+	margin: 30px auto 30px auto;
+	-webkit-border-radius: 6px;
+	-moz-border-radius:    6px;
+	-ms-border-radius:     6px;
+	border-radius:         6px;
+	background: #fff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 	0px 2px 6px rgba(0, 0, 0, 0.12);
+	box-shadow: 		0px 2px 6px rgba(0, 0, 0, 0.12);
+	height: 430px;
+	position: relative;
+	z-index: 4;
+}
+.plan-stage .plancol {
+	width: 170px;
+	float: right;
+}
+.plan-stage .theplan {
+	height: 430px;
+	border-right: 1px solid #e5e5e5;
+	position: relative;
+}
+.plan-stage .theplan.special {
+	background: #fbfffb;
+	border: 2px solid #50bd50;
+	-webkit-border-radius: 6px;
+	-moz-border-radius:    6px;
+	-ms-border-radius:     6px;
+	border-radius:         6px;
+	-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 	0px 2px 6px rgba(0, 0, 0, 0.12);
+	box-shadow: 		0px 2px 6px rgba(0, 0, 0, 0.12);
+	height: 460px;
+	width: 170px;
+	z-index: 5;
+	margin: -17px -2px 0 0;
+}
+.plan-stage .theplan .planflag {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	background:url('../images/plan-flag.png') no-repeat;
+	position: absolute;
+	top: -72px;
+}
+.plan-stage .theplan.plan-3 .planflag {
+	background-position: center top;
+}
+.plan-stage .theplan.plan-4 .planflag {
+	background-position: center bottom;
+}
+.plan-stage .theplan .thetitle {
+	height: 159px;
+	text-align: center;
+}
+.plan-stage .theplan.special .thetitle {
+	padding-top: 15px;
+}
+.plan-stage .theplan .thetitle h1 {
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: normal;
+	font-size: 24px;
+	height: 105px;
+	color: #3090e9;
+	line-height: 105px;
+	background:url('../images/pricetable-line.png') no-repeat center bottom;
+}
+.plan-stage .theplan .thetitle .price {
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: normal;
+	font-size: 13px;
+	color: #7a7a7a;
+	line-height: 54px;
+}
+.plan-stage .theplan .thebody {
+	background:url('../images/pricetable-title.png') no-repeat center top;
+	padding-top: 1px;
+}
+.plan-stage .theplan .row {
+	height: 68px;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+	text-align: center;
+	line-height: 68px;
+}
+.plan-stage .theplan .row h6 {
+	text-align: right;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: normal;
+	font-size: 12px;
+	color: #8a8a8a;
+	padding: 0 10px;
+	display: none;
+}
+.plan-stage .theplan .row .true {
+	display: block;
+	margin: 23px auto 0 auto;
+	width: 22px;
+	height: 22px;
+	background:url('../images/tick-li.svg') no-repeat center -44px;
+}
+.plan-stage .theplan.special .row .true {
+	background:url('../images/tick-li.svg') no-repeat center top;
+}
+.plan-stage .theplan .planbutton {
+	height: 34px;
+	background: #3090e9;
+	border:none;
+	margin: 14px 15px;
+	display: block;
+	text-align: center;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 32px;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	-ms-border-radius:     3px;
+	border-radius:         3px;
+	cursor: pointer;
+}
+.plan-stage .theplan.special .planbutton {
+	background: #50bd50;
+}
+.plan-stage .table-spec {
+	background: #fcfcfc;
+	border: 1px solid #dddddd;
+	-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 	0px 2px 6px rgba(0, 0, 0, 0.07);
+	box-shadow: 		0px 2px 6px rgba(0, 0, 0, 0.07);
+	-webkit-border-radius: 6px;
+	-moz-border-radius:    6px;
+	-ms-border-radius:     6px;
+	border-radius:         6px;
+	width: 350px;
+	position: absolute;
+	right: 15px;
+	bottom: 94px;
+	z-index: 3;
+}
+.plan-stage .table-spec .row {
+	height: 68px;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+	line-height: 68px;
+	text-align: right;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	padding: 0 20px;
+	font-size: 13px;
+	line-height: 68px;
+	color: #888;
+}
+.plan-stage .table-spec .row:last-child {
+	border: none;
+}
+@media (max-width: 1040px) {
+	.plan-stage .handtext1515 div {
+		margin-left: 530px;
+	}
+	.plan-stage .plancol {
+		width: 160px;
+		float: right;
+	}
+	.plan-stage .theplan.special {
+		width: 160px;
+	}
+	.plan-stage .theplan .planbutton {
+		margin: 14px 10px;
+	}
+	.plan-stage .table-spec .row {
+		font-size: 12px;
+	}
+}
+@media (max-width: 960px) {
+	.plan-stage .handtext1515 div {
+		margin-left: 460px;
+	}
+	.plan-stage .planslist {
+		height: 360px;
+	}
+	.plan-stage .theplan {
+		height: 360px;
+	}
+	.plan-stage .theplan.special {
+		width: 140px;
+		height: 390px;
+	}
+	.plan-stage .theplan .planflag {
+		top: -80px;
+	}
+	.plan-stage .plancol {
+		width: 140px;
+		float: right;
+	}
+	.plan-stage .theplan .thetitle {
+		height: 134px;
+	}
+	.plan-stage .theplan .thetitle h1 {
+		height: 90px;
+		line-height: 100px;
+	}
+	.plan-stage .theplan .thetitle .price {
+		line-height: 44px;
+	}
+	.plan-stage .theplan .row {
+		height: 53px;
+		line-height: 53px;
+	}
+	.plan-stage .theplan .row .true {
+		display: block;
+		margin: 16px auto 0 auto;
+	}
+	.plan-stage .table-spec {
+		bottom: 94px;
+	}
+	.plan-stage .table-spec .row {
+		height: 53px;
+		line-height: 53px;
+	}
+}
+@media (max-width: 880px) {
+	.plan-stage {
+		margin: 0 auto;
+	}
+	.plan-stage .handtext1515 div {
+		margin: 0 auto;
+		float: none;
+	}
+	.plan-stage .handtext1515 span {
+		padding-top: 44%;
+		background:url('../images/1515-handtitle-mobile.png') no-repeat center;
+		background-size: cover;
+	}
+	.plan-stage .planslist {
+		width: 100%;
+		float: none;
+		clear: both;
+		margin: 30px auto 30px auto;
+		-webkit-border-radius: none;
+		-moz-border-radius:    none;
+		-ms-border-radius:     none;
+		border-radius:         none;
+		background: no-repeat;
+		border: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: 	none;
+		box-shadow: 		none;
+		height: auto;
+	}
+	.plan-stage .plancol {
+		width: auto;
+		float: none;
+	}
+	.plan-stage .theplan {
+		margin: 15px 0;
+		height: auto;
+		overflow: hidden;
+		-webkit-border-radius: 6px;
+		-moz-border-radius:    6px;
+		-ms-border-radius:     6px;
+		border-radius:         6px;
+		background: #fff;
+		border: 1px solid #cccccc;
+		-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+		-moz-box-shadow: 	0px 2px 6px rgba(0, 0, 0, 0.12);
+		box-shadow: 		0px 2px 6px rgba(0, 0, 0, 0.12);
+		position: relative;
+	}
+	.plan-stage .theplan.special {
+		background: #fbfffb;
+		border: 2px solid #50bd50;
+		position: static;
+		height: auto;
+		width: auto;
+		margin: 0;
+	}
+	.plan-stage .theplan .planflag {
+		width: 100px;
+		position: absolute;
+		top: 10px;
+		left: 10px; 
+	}
+	.plan-stage .theplan .thetitle {
+		height: auto;
+		float: right;
+		width: 150px;
+	}
+	.plan-stage .theplan.special .thetitle {
+		padding-top: 0;
+	}
+	.plan-stage .theplan .thebody {
+		background:none;
+		padding-top: 1px;
+		margin-right: 150px;
+	}
+	.plan-stage .theplan .row h6 {
+		display: block;
+	}
+	.plan-stage .theplan .row .true {
+		display: none
+	}
+	.plan-stage .table-spec {
+		display: none;
+	}
+}
+@media (max-width: 600px) {
+	.plan-stage .handtext1515 {
+		margin: 40px 0 0 0
+	}
+	.plan-stage .handtext1515 div {
+		width: 100%
+	}
+	.plan-stage .theplan .thetitle {
+		float: none;
+		width: auto;
+		padding:0 40px;
+	}
+	.plan-stage .theplan.plan-3 .thetitle,
+	.plan-stage .theplan.plan-4 .thetitle {
+		float: right;
+	}
+	.plan-stage .theplan .thebody {
+		clear: both;
+		background:url('../images/pricetable-title.png') no-repeat center top;
+		padding-top: 1px;
+		margin-right: 0;
+	}
+	.plan-stage .theplan .row h6 {
+		text-align: center;
+	}
+}
+.signup-page .reg-stage {
+	background: #fdfdfd;
+	overflow: hidden;
+}
+.signup-page .reg-stage .reg-sec {
+	padding: 15px;
+	background: #fff;
+	border-left: 1px solid #e9e9e9;
+}
+.signup-page .changplan-title {
+	background: #f2f9ff;
+	overflow: hidden;
+	border: 1px solid #d9e9f7;
+	height: 60px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	-ms-border-radius:     3px;
+	border-radius:         3px;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	color: #5d85aa;
+	font-size: 13px;
+	padding: 0 20px;
+}
+.signup-page .changplan-title p {
+	height: 24px;
+	line-height: 24px;
+	margin: 18px 0;
+	float: right;
+}
+.signup-page .changplan-title span {
+	display: inline-block;
+	font-weight: normal;
+	color: #38658f;
+	font-size: 14px;
+}
+.signup-page .changplan-title .change {
+	height: 24px;
+	line-height: 24px;
+	margin: 18px 0;
+	float: left;
+	color: #e27a7a;
+	font-size: 11px;
+	cursor: pointer;
+}
+.signup-page .reg-stage .reg-sec .reg-form {
+	margin-top: 30px
+}
+.signup-page .reg-stage .reg-sec .reg-form label {
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	color: #888;
+	font-size: 11px;
+	display: none;
+}
+.signup-page .reg-stage .reg-sec .reg-form .row {
+	margin: 15px 30px;
+	text-align: right;
+}
+.signup-page .reg-stage .reg-sec .reg-form .row .input {
+	width: 75%;
+	height: 42px;
+	line-height: 42px;
+	display: block;
+	margin: 2px auto;
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+}
+.signup-page .reg-stage .reg-sec .reg-form .chb {
+	width: 75%;
+	margin: 0 auto;
+}
+.signup-page .reg-stage .reg-sec .reg-form .chb label {
+	display: block;
+	float: right;
+	padding:1px 10px;
+}
+.signup-page .reg-stage .reg-sec .reg-form .chb input {
+	float: right;
+	margin-top: 3px;
+}
+.signup-page .reg-stage .reg-sec .reg-form .reg-submit {
+	background: #50bd50;
+	width: 75%;
+}
+
+.lightbox .the-box .row .login-submit:hover {
+	background: #007eff;
+}
+.signup-page .reg-stage .left-col {
+}
+.signup-page .reg-stage .left-col .userag {
+	display: block;
+	width: 240px;
+	height: 240px;
+	margin: 120px auto 40px auto;
+	background:url('../images/user-ag.png') no-repeat center;
+}
+.signup-page .reg-stage .left-col .usertext {
+	width: 80%;
+	margin: 0 auto;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	text-align: center;
+	color: #888;
+	font-size: 12px;
+}
+.signup-page .invoice-stage {
+	background: #fdfdfd;
+	overflow: hidden;
+}
+.signup-page .invoice-stage .invoice-sec {
+	padding: 15px;
+	background: #fff;
+	border-left: 1px solid #e9e9e9;
+}
+.signup-page .invoice-stage .invoice-sec .box-title {
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	text-align:right;
+	font-size:14px;
+	margin: 10px 5px 20px 20px;
+	color:#777;
+}
+.signup-page .invoice-stage .invoice-sec .receipt-box {
+	margin: 30px 0 40px 0
+}
+.signup-page .invoice-stage .receipt-box .thereceipt {
+	background:url(../images/receipt-bg.png) no-repeat center top;
+	background-size:contain;
+	width:294px;
+	height:219px;
+	margin:0 auto;
+	padding:1px;
+	position:relative;
+}
+.signup-page .invoice-stage .receipt-box .thereceipt .title {
+	border-bottom:3px double #edd2d2;
+	width:160px;
+	margin:34px auto 16px auto;
+	padding-bottom:13px;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	text-align:center;
+	font-size:14px;
+	color:#777;
+	white-space:nowrap;
+}
+.signup-page .invoice-stage .receipt-box .thereceipt .title span{
+	color:#b14141;
+	padding:0 5px;
+	white-space:nowrap;
+}
+.signup-page .invoice-stage .receipt-box .thereceipt .row {
+	overflow:hidden;
+	margin:0 26px;
+	height: 38px;
+	line-height: 38px;
+	background:url('../images/payment-receipt-line.png') repeat-x center;
+}
+.signup-page .invoice-stage .receipt-box .thereceipt .row span{
+	background:#f6f6f6;
+	float:right;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size:12px;
+	color:#888;
+	padding-left:10px;
+}
+.signup-page .invoice-stage .receipt-box .thereceipt .row div{
+	background:#f6f6f6;
+	float:left;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	text-align:center;
+	font-size:16px;
+	color:#666;
+	padding-right:10px;
+}
+.signup-page .invoice-stage .receipt-box .thereceipt .row div span {
+	display: inline-block;
+	float: none;
+	font-size:12px;
+	color:#999;
+	padding: 0 5px 0 0;
+}
+.signup-page .invoice-stage .invoice-sec .promo-box {
+	margin: 10px 0 50px 0
+}
+.signup-page .invoice-stage .promo-box .promo-form{
+	margin-bottom: 15px;
+}
+.signup-page .invoice-stage .promo-box .promo-form .input {
+	display: block;
+	width: 240px;
+	margin: 0 auto;
+}
+.signup-page .invoice-stage .promo-box .promo-form .ibtn {
+	display: block;
+	width: 160px;
+	margin: 10px auto 0 auto;
+	height: 36px;
+	line-height: 36px;
+	background: #50bd50;
+	font-size:13px;
+}
+.signup-page .invoice-stage .promo-box .success .row {
+	margin-bottom: 5px;
+}
+.signup-page .invoice-stage .termsofuse {
+	margin: 20px 0;
+	overflow: hidden;
+	color: #666;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size:11px;
+	text-align: right;
+}
+.signup-page .invoice-stage .termsofuse.error {
+	color: #ee3939;
+}
+.signup-page .invoice-stage .termsofuse input {
+	float: right;
+	margin: 2px 10px 0 10px;
+}
+.signup-page .invoice-stage .termsofuse a {
+	color: #50bd50;
+}
+.signup-page .invoice-stage .invoice-sec .payment-box {
+	margin: 30px 0 10px 0
+}
+.signup-page .invoice-stage .invoice-sec .payment-box .gotopay {
+	width: 240px;
+	margin: 0 auto
+}
+.signup-page .invoice-stage .invoice-sec .nopay-box {
+	margin: 30px 0 10px 0
+}
+.signup-page .invoice-stage .invoice-sec .nopay-box .notgotopay {
+	width: 240px;
+	margin: 0 auto
+}
+.signup-page .invoice-stage .left-col {
+	text-align: center;
+	padding-bottom: 40px;
+}
+.signup-page .invoice-stage .left-col .cards-text {
+	color: #555;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size:12px;
+	margin: 40px;
+	margin-top: 80px
+}
+.signup-page .invoice-stage .left-col .bank-cards {
+	width: 250px;
+	height: 270px;
+	background:url('../images/bank-cards.png') no-repeat center;
+	margin: 0px auto 20px auto
+}
+.signup-page .invoice-stage .left-col a{
+	display: inline-block;
+	background: #fuserfa;
+	color: #17ad2c;
+	font-family: 'IRANSans-web', tahoma;
+	font-weight: 300;
+	font-size:11px;
+	padding:0 10px;
+}
+@media (max-width: 1040px) {
+	.signup-page .reg-stage .reg-sec .reg-form .row {
+		margin: 15px 10px;
+		text-align: right;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .row .input {
+		width: 95%;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .chb {
+		width: 95%;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .reg-submit {
+		width: 95%;
+	}
+}
+@media (max-width: 800px) {
+	.signup-page .topbgline {
+		height: 470px;
+	}
+	.signup-page .apps-download-counter {
+		margin-top: 40px;
+	}
+	.signup-page .apps-download-counter .counter-title {
+		font-size: 16px;
+	}
+	.signup-page .page-title {
+		font-size: 20px;
+		height: 60px;
+		margin: 50px 10px 10px 10px;
+		line-height: 60px;
+	}
+	.signup-page .signup-block .signup-title .stage-title {
+		font-size: 16px;
+	}
+	.signup-page .reg-stage .col-1-6 {
+		width: 100%;
+	}
+	.signup-page .reg-stage .reg-sec {
+		border-left: 0;
+		border-top: 1px solid #e9e9e9;
+	}
+	.signup-page .reg-stage .left-col .userag {
+		margin: 30px auto 30px auto;
+	}
+	.signup-page .reg-stage .left-col .usertext {
+		width: 90%;
+		margin-bottom: 40px;
+	}
+	.signup-page .invoice-stage .col-1-6 {
+		width: 100%;
+	}
+}
+@media (max-width: 600px) {
+	.signup-page .topbgline {
+		height: 350px;
+	}
+	.signup-page .apps-download-counter {
+		margin-top: 30px;
+		height: 120px;
+	}
+	.signup-page .apps-download-counter .counter-title {
+		font-size: 12px;
+		color: #fff;
+		line-height: inherit;
+		height: auto;
+		margin-bottom: 15px;
+	}
+	.signup-page .apps-download-counter .counter-title span {
+		display: block;
+	}
+	.signup-page .page-title {
+		font-size: 16px;
+		height: 40px;
+		margin: 30px 10px 10px 10px;
+		line-height: 40px;
+	}
+	.signup-page .signup-block {
+		margin:0 5px 15px 5px;
+	}
+	.signup-page .signup-block .signup-title {
+		height: 50px;
+		width: 100%;
+	}
+	.signup-page .signup-block .signup-title .stage-title {
+		display: none;
+		width: auto;
+		height: 50px;
+		line-height: 50px;
+		font-size: 14px;
+	}
+	.signup-page .signup-block .signup-title .stage-title.active {
+		display: block;
+	}
+	.signup-page .signup-block .signup-title .title-arrow {
+		display: none;
+	}
+	.flip-clock-wrapper ul {
+		margin: 2px !important;
+		width: 30px !important;
+		height: 45px !important;
+	}
+	.flip-clock-wrapper ul li a div {
+		font-weight: normal !important;
+		font-size: 35px !important;
+		line-height: 48px !important;
+	}
+	.signup-page .reg-stage .reg-sec {
+		padding: 8px;
+	}
+	.signup-page .reg-stage .reg-sec .changplan-title {
+		height: auto;
+		font-size: 10px;
+		padding: 0 10px;
+		margin-bottom: 25px;
+	}
+	.signup-page .reg-stage .reg-sec .changplan-title p {
+		margin: 8px 0;
+	}
+	.signup-page .reg-stage .reg-sec .changplan-title span {
+		font-size: 13px;
+	}
+	.signup-page .reg-stage .reg-sec .changplan-title .change {
+		margin: 8px 0;
+		font-size: 11px;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form {
+		margin-top: 10px
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .row {
+		margin: 15px 5px;
+		text-align: right;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .row .input {
+		width: 98%;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .chb {
+		width: 98%;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .chb label {
+		font-size: 10px;
+	}
+	.signup-page .reg-stage .reg-sec .reg-form .reg-submit {
+		width: 98%;
+	}
+	.signup-page .invoice-stage .invoice-sec {
+		padding: 15px 5px;
+		border-left:0;
+		border-bottom: 1px solid #e9e9e9;
+	}
+	.signup-page .invoice-stage .invoice-sec .box-title {
+		font-size:12px;
+		margin: 0px 10px 20px 10px;
+	}
+	.signup-page .invoice-stage .invoice-sec .receipt-box {
+		margin: 10px 0 30px 0
+	}
+	.signup-page .invoice-stage .invoice-sec .promo-box {
+		margin: 10px 0 20px 0
+	}
+	.signup-page .invoice-stage .promo-box .success .row {
+		margin-bottom: 5px;
+	}
+	.signup-page .invoice-stage .termsofuse {
+		font-size:10px;
+	}
+	.signup-page .invoice-stage .termsofuse input {
+		margin: 2px 0 0 6px;
+	}
+	.signup-page .invoice-stage .left-col {
+		padding-bottom: 20px;
+	}
+	.signup-page .invoice-stage .left-col .cards-text {
+		font-size:10px;
+		margin:30px 10px;
+	}
+	.signup-page .invoice-stage .left-col a{
+		font-size:10px;
+
+	}
+}

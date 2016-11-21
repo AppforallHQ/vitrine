@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.PROJECT.ir/signup/</loc>
+    </url>
+    <url>
+        <loc>https://www.PROJECT.ir/vitrine/</loc>
+    </url>
+    <url>
+        <loc>https://www.PROJECT.ir/bundle/</loc>
+    </url>
+    {% for cat in cats %}
+    <url>
+        <loc>https://www.PROJECT.ir/vitrine/cat/{{cat.title | url_encode}}</loc>
+    </url>
+    {% endfor %}
+    {% for app in apps %}
+    <url>
+        <loc>https://www.PROJECT.ir/vitrine/{{app}}/</loc>
+    </url>
+    {% endfor %}
+</urlset>

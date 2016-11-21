@@ -1,0 +1,22 @@
+<div class="apps-rightside fa">
+    <a href="/vitrine/?sorton=upd&sort=-1" class="new-apps-button">
+        جدیدترین برنامه‌ها<span></span>
+    </a>
+    <a href="/bundle" class="bundles-list-button">
+        برنامه‌های پیشنهادی<span></span>
+    </a>
+    <div class="apps-category">
+        <div class="category-title">
+            دسته‌بندی برنامه‌ها<span></span>
+        </div>
+        <ul class="category-list">
+            {% for cat in cats %}
+            {% if cat.title %}
+            <li>
+                <a href="/vitrine/cat/{{cat.title}}">{{cat.translated}}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

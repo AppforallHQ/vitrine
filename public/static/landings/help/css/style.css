@@ -1,0 +1,136 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline:none;
+}
+html {
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+body {
+	line-height: 1.7;
+	color: #333333;
+	background-color: #fff;
+	direction:ltr;
+	text-align: left;
+	font-family:tahoma;
+}
+a, a:visited {
+	color:#fff;
+	text-decoration: none
+}
+a:hover {
+	color:#333;
+	text-decoration:none
+}
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+}
+.help-title {
+	color:#fff;
+	font-family:tahoma;
+	text-align: center;
+	font-size: 24px;
+	padding:20px; 
+	background-color: #3090e9;
+}
+.help-title img {
+	display: block;
+	margin: 0 auto 30px auto;
+}
+.help-body{
+	background: #fff;
+	direction:rtl;
+	text-align: center;
+	margin: 6px;
+}
+.help-body .text {
+	padding:20px 5px;
+	text-align: right;
+}
+.help-body .text h1 {
+	color:#555;
+	font-family:tahoma;
+	text-align: right;
+	font-size: 14px;
+}
+.help-body .text .en {
+	color:#3090e9;
+	margin: 20px 0;
+	font-family: arial, tahoma;
+	direction: ltr;
+	text-align: left;
+	font-size: 16px;
+	background: #fbfbfb;
+	border: 1px solid #eaeaea;
+	padding:5px 10px;
+}
+h2.thetitle {
+	text-align: right;
+	font-size: 20px;
+	color:#3090e9;
+	margin-right: 10px;
+}
+a.videolink {
+	-webkit-border-radius: 6px;
+	-moz-border-radius:    6px;
+	-ms-border-radius:     6px;
+	border-radius:         6px;
+	display: inline-block;
+	padding:8px 20px 10px 20px;
+	text-align: center;
+	background: #50bd50;
+	margin:10px 0 30px 0;
+	color: #fff;
+}
+.help-body .img-box {
+	margin: 10px 5px;
+	position: relative;
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius:    10px;
+	-ms-border-radius:     10px;
+	border-radius:         10px;
+	border:3px solid #3090e9;
+	overflow: hidden;
+	min-height: 200px;
+}
+.help-body .img-box span {
+	display: block;
+	width: 60px;
+	height: 60px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomleft: 30px;
+	border-bottom-left-radius: 30px;
+	background: #3090e9;
+	color:#fff;
+	font-family: arial, tahoma;
+	text-align: center;
+	font-size: 22px;
+	line-height: 60px;
+	position: absolute;
+}
+.help-body .img-box img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

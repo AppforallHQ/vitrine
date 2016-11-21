@@ -1,0 +1,6 @@
+#!/bin/sh
+sudo stop vitrine
+#./uglify_js
+./export_procfile
+sudo start vitrine
+echo "restarting Node app"

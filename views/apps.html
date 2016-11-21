@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block style %}
+<!-- <link href="/static/css/apps.css" media="all" rel="stylesheet" > -->
+<link href="/assets/css/apps.min.css" media="all" rel="stylesheet" >
+{% endblock %}
+
+{% block download %}{% endblock %}
+
+{% block main %}
+<main>
+	<section class="apps-page">
+		<div class="topbgline">
+			<section class="container">
+				<h1 class="page-title">برنامه های موجود در اپفورال</h1>
+				<section class="search-box">
+					<h1 class="search-title">همه برنامه های آیفون و آیپد اپ‌استور اپل از طریق اپفورال قابل دانلود است. به دنبال برنامه خاصی می گردید؟</h1>
+					<div class="search-block">
+						<form class="search-form" method="get" action="/vitrine/">
+							<input name="q" type="text" placeholder="جستجو نام برنامه یا کلمات کلیدی و ...." class="search-input input" value="{% block searchquery %}{% endblock %}">
+							<input type="submit" class="search-submit" value="">
+						</form>
+					</div>
+				</section><!--search-box-->
+			</section>
+		</div>
+		<section class="container">
+			<section class="apps-block">
+
+          {% block appsblock %}{% endblock %}
+
+			</section><!--apps-block-->
+
+		</section>
+	</section>
+</main>
+{% endblock %}

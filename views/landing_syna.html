@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block pagetitle %}
+<title>اپفورال | دانلود ساینا برای آیفون و آیپد</title>
+{% endblock %}
+{% block style %}
+<link href="/static/landings/syna/css/style.css" media="all" rel="stylesheet" >
+{% endblock %}
+
+{% block login %}{% endblock %}
+
+{% block main %}
+<div class="light-bg"></div>
+
+<section class="syna-body fa">
+    <div class="syna-header"></div>
+    <div class="box-body">
+        <h1 class="thetitle">تماس رایگان در اربعین 94</h1>
+        <img src="static/landings/syna/images/syna-icon.png" class="syna-icon">
+        <div class="syna-name"></div>
+        <div class="syna-text">
+            <p>شما می‌توانید با سایر کاربران ساینا که این نرم‌افزار را بر روی گوشی خود نصب نموده‌اند، به صورت رایگان تماس بگیرید، پیام بفرستید، چت کنید، عکس، فیلم و پیام صوتی ارسال نمایید. تماس با سایر کاربران ساینا رایگان می‌باشد. در صورتی که قصد دارید با کاربرانی که عضو ساینا نیستند تماس بگیرید می‌توانید از قابلیت تماس خارج از شبکه ساینا استفاده نمایید.</p>
+        </div>
+        <div class="download-box">
+            <a href="#" id="dirdl" class="download-link">دانلود رایگان ساینا از اپفورال
+                <span><i></i></span>
+            </a>
+            <a href="/" target="_blank" class="about-link">درباره اپفورال بیشتر بدانید.</a>
+        </div>
+
+        <div class="right-border"></div>
+        <div class="left-border"></div>
+    </div>
+</section>
+
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+ //for Counter apps download
+ $(document).ready(function(){
+     $('#dirdl').on("click", function(e) {
+         analytics.track("userfree_download", {
+             category: 'Download App',
+             label: 'syna'
+         });
+     });
+
+     if(window.location.origin.match('PROJECT\.biz')){
+         analytics.ready(function () {
+             ga('require', 'linker');
+             ga('linker:autoLink', ['PROJECT.biz']);
+         });
+     }
+
+     $(".sms-form button.submit").on('click', function(){
+         analytics.track('sms_download', {
+             category: 'Download App',
+             label: 'syna',
+             value: 1
+         });
+     });
+
+ });
+</script>
+{% endblock %}
