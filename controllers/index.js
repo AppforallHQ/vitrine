@@ -111,7 +111,7 @@ module.exports = {
                 var cat = translate_cat_names(result);
                 var params = {q: search_query, count: 50};
 
-                request({url: 'http://localhost:8008/v1/apps/find/', qs:params}, function(err, response, body){
+                request({url: 'http://API/apps/find/', qs:params}, function(err, response, body){
                     if(err){
                         res.render('app_list');
                     }
